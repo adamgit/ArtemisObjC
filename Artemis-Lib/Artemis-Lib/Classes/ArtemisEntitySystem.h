@@ -19,6 +19,9 @@
 
 +(ArtemisEntitySystem*) entitySystemWithAspect:(ArtemisAspect*) aspect;
 
+/** Objc: needed for subclasses, java doesnt have this problem */
+- (id)initWithAspect:(ArtemisAspect*) aspect;
+
 -(void) begin;
 -(void) end;
 -(void) process;

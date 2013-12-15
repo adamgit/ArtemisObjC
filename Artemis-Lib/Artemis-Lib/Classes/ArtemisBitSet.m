@@ -16,6 +16,12 @@
 	return newValue;
 }
 
+/** ObjC: dont let the default constructr exist; force use of the other one */
+- (id)init
+{
+    return [self initWithCapacity:32];
+}
+
 - (id)initWithCapacity:(int) capacity
 {
     self = [super init];

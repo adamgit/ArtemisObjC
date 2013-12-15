@@ -29,6 +29,11 @@
 		66141CE1185E429600712C78 /* ArtemisWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = 66141CD5185E429600712C78 /* ArtemisWorld.m */; };
 		66141CE7185E58E600712C78 /* Position.m in Sources */ = {isa = PBXBuildFile; fileRef = 66141CE6185E58E600712C78 /* Position.m */; };
 		66141CEA185E5AE300712C78 /* ArtemisComponentMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 66141CE9185E5AE300712C78 /* ArtemisComponentMapper.m */; };
+		66141CED185E681E00712C78 /* ArtemisHelloWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = 66141CEC185E681E00712C78 /* ArtemisHelloWorld.m */; };
+		66141CF1185E69FF00712C78 /* ArtemisEntityProcessingSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 66141CF0185E69FF00712C78 /* ArtemisEntityProcessingSystem.m */; };
+		66141CF4185E6BBA00712C78 /* MovementSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 66141CF3185E6BBA00712C78 /* MovementSystem.m */; };
+		66141CF7185E6CA800712C78 /* Velocity.m in Sources */ = {isa = PBXBuildFile; fileRef = 66141CF6185E6CA800712C78 /* Velocity.m */; };
+		66141CFC185E710400712C78 /* XCTAsyncTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 66141CFA185E710400712C78 /* XCTAsyncTestCase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +99,17 @@
 		66141CE6185E58E600712C78 /* Position.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Position.m; sourceTree = "<group>"; };
 		66141CE8185E5AE300712C78 /* ArtemisComponentMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtemisComponentMapper.h; sourceTree = "<group>"; };
 		66141CE9185E5AE300712C78 /* ArtemisComponentMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtemisComponentMapper.m; sourceTree = "<group>"; };
+		66141CEB185E681E00712C78 /* ArtemisHelloWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtemisHelloWorld.h; sourceTree = "<group>"; };
+		66141CEC185E681E00712C78 /* ArtemisHelloWorld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtemisHelloWorld.m; sourceTree = "<group>"; };
+		66141CEF185E69FF00712C78 /* ArtemisEntityProcessingSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtemisEntityProcessingSystem.h; sourceTree = "<group>"; };
+		66141CF0185E69FF00712C78 /* ArtemisEntityProcessingSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtemisEntityProcessingSystem.m; sourceTree = "<group>"; };
+		66141CF2185E6BBA00712C78 /* MovementSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovementSystem.h; sourceTree = "<group>"; };
+		66141CF3185E6BBA00712C78 /* MovementSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovementSystem.m; sourceTree = "<group>"; };
+		66141CF5185E6CA800712C78 /* Velocity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Velocity.h; sourceTree = "<group>"; };
+		66141CF6185E6CA800712C78 /* Velocity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Velocity.m; sourceTree = "<group>"; };
+		66141CF9185E6DEB00712C78 /* ArtemisWorld_Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtemisWorld_Debug.h; sourceTree = "<group>"; };
+		66141CFA185E710400712C78 /* XCTAsyncTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCTAsyncTestCase.m; sourceTree = "<group>"; };
+		66141CFB185E710400712C78 /* XCTAsyncTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCTAsyncTestCase.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +187,10 @@
 		66141CAC185E426F00712C78 /* Artemis-LibTests */ = {
 			isa = PBXGroup;
 			children = (
+				66141CFA185E710400712C78 /* XCTAsyncTestCase.m */,
+				66141CFB185E710400712C78 /* XCTAsyncTestCase.h */,
+				66141CEB185E681E00712C78 /* ArtemisHelloWorld.h */,
+				66141CEC185E681E00712C78 /* ArtemisHelloWorld.m */,
 				66141CB2185E426F00712C78 /* Artemis_LibTests.m */,
 				66141CAD185E426F00712C78 /* Supporting Files */,
 			);
@@ -189,6 +209,8 @@
 		66141CBC185E428C00712C78 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				66141CF8185E6DD300712C78 /* ObjectiveC Extensions */,
+				66141CEE185E69F000712C78 /* systems */,
 				66141CBD185E429600712C78 /* ArtemisAspect.h */,
 				66141CBE185E429600712C78 /* ArtemisAspect.m */,
 				66141CBF185E429600712C78 /* ArtemisBag.h */,
@@ -233,6 +255,8 @@
 			children = (
 				66141CE5185E58E600712C78 /* Position.h */,
 				66141CE6185E58E600712C78 /* Position.m */,
+				66141CF5185E6CA800712C78 /* Velocity.h */,
+				66141CF6185E6CA800712C78 /* Velocity.m */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -240,8 +264,27 @@
 		66141CE4185E58D400712C78 /* Systems */ = {
 			isa = PBXGroup;
 			children = (
+				66141CF2185E6BBA00712C78 /* MovementSystem.h */,
+				66141CF3185E6BBA00712C78 /* MovementSystem.m */,
 			);
 			path = Systems;
+			sourceTree = "<group>";
+		};
+		66141CEE185E69F000712C78 /* systems */ = {
+			isa = PBXGroup;
+			children = (
+				66141CEF185E69FF00712C78 /* ArtemisEntityProcessingSystem.h */,
+				66141CF0185E69FF00712C78 /* ArtemisEntityProcessingSystem.m */,
+			);
+			path = systems;
+			sourceTree = "<group>";
+		};
+		66141CF8185E6DD300712C78 /* ObjectiveC Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				66141CF9185E6DEB00712C78 /* ArtemisWorld_Debug.h */,
+			);
+			path = "ObjectiveC Extensions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,6 +370,7 @@
 			files = (
 				66141C9E185E426F00712C78 /* Artemis_Lib.m in Sources */,
 				66141CD6185E429600712C78 /* ArtemisAspect.m in Sources */,
+				66141CF7185E6CA800712C78 /* Velocity.m in Sources */,
 				66141CD8185E429600712C78 /* ArtemisBitSet.m in Sources */,
 				66141CDF185E429600712C78 /* ArtemisEntitySystem.m in Sources */,
 				66141CE1185E429600712C78 /* ArtemisWorld.m in Sources */,
@@ -336,7 +380,9 @@
 				66141CE7185E58E600712C78 /* Position.m in Sources */,
 				66141CD9185E429600712C78 /* ArtemisComponent.m in Sources */,
 				66141CE0185E429600712C78 /* ArtemisManager.m in Sources */,
+				66141CF4185E6BBA00712C78 /* MovementSystem.m in Sources */,
 				66141CDA185E429600712C78 /* ArtemisComponentManager.m in Sources */,
+				66141CF1185E69FF00712C78 /* ArtemisEntityProcessingSystem.m in Sources */,
 				66141CDB185E429600712C78 /* ArtemisComponentType.m in Sources */,
 				66141CDD185E429600712C78 /* ArtemisEntityManager.m in Sources */,
 			);
@@ -347,6 +393,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				66141CB3185E426F00712C78 /* Artemis_LibTests.m in Sources */,
+				66141CED185E681E00712C78 /* ArtemisHelloWorld.m in Sources */,
+				66141CFC185E710400712C78 /* XCTAsyncTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,4 +9,6 @@
 
 +(Position*) positionWithX:(float) x y:(float) y;
 
+@property(nonatomic) float x,y;
+
 @end

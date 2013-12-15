@@ -7,7 +7,7 @@
 
 @interface ArtemisComponentMapper : NSObject
 
-+(ArtemisComponentMapper*) componentMapperForType:(ArtemisComponentType*)type inWorld:(ArtemisWorld*) world;
++(ArtemisComponentMapper*) componentMapperForType:(Class) componentClass inWorld:(ArtemisWorld*) world;
 
 -(NSObject*) get:(ArtemisEntity*) entity;
 -(NSObject*) getSafe:(ArtemisEntity*) entity;

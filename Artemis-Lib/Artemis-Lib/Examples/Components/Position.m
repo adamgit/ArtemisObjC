@@ -6,6 +6,9 @@
 {
 	Position* p = [[Position new] autorelease];
 	
+	p.x = x;
+	p.y = y;
+	
 	return p;
 }
 

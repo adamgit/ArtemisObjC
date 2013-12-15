@@ -44,14 +44,7 @@ static NSMutableDictionary* indices;
 
 +(ArtemisEntitySystem *)entitySystemWithAspect:(ArtemisAspect *)aspect
 {
-	ArtemisEntitySystem* newValue = [[ArtemisEntitySystem new] autorelease];
-	
-	newValue.aspect = aspect;
-	newValue.allSet = aspect.allSet;
-	newValue.exclusionSet = aspect.exclusionSet;
-	newValue.oneSet = aspect.oneSet;
-	newValue.systemIndex = [ArtemisSystemIndexManager getIndexFor:[self class]];
-	newValue.isDummy = newValue.allSet.isEmpty && newValue.oneSet.isEmpty;
+	ArtemisEntitySystem* newValue = [[[ArtemisEntitySystem alloc] initWithAspect:aspect] autorelease];
 	
 	return newValue;
 }
@@ -61,6 +54,20 @@ static NSMutableDictionary* indices;
     self = [super init];
     if (self) {
         self.actives = [ArtemisBag bag];		
+    }
+    return self;
+}
+
+- (id)initWithAspect:(ArtemisAspect*) aspect
+{
+    self = [self init];
+    if (self) {
+        self.aspect = aspect;
+		self.allSet = aspect.allSet;
+		self.exclusionSet = aspect.exclusionSet;
+		self.oneSet = aspect.oneSet;
+		self.systemIndex = [ArtemisSystemIndexManager getIndexFor:[self class]];
+		self.isDummy = self.allSet.isEmpty && self.oneSet.isEmpty;
     }
     return self;
 }

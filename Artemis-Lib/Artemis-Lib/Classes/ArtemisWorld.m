@@ -5,6 +5,8 @@
 #import "ArtemisEntitySystem.h"
 #import "ArtemisEntityObserver.h"
 
+#import "ArtemisWorld_Debug.h"
+
 typedef void (^Performer)(NSObject<ArtemisEntityObserver>* observer, ArtemisEntity* entity);
 
 @interface ArtemisComponentMapperInitHelper : NSObject
@@ -25,6 +27,9 @@ typedef void (^Performer)(NSObject<ArtemisEntityObserver>* observer, ArtemisEnti
 
 @property(nonatomic,retain) NSMutableDictionary* systems;
 @property(nonatomic,retain) ArtemisBag* systemsBag;
+
+#pragma mark - ObjectiveC customizations
+
 
 @end
 
@@ -188,6 +193,10 @@ typedef void (^Performer)(NSObject<ArtemisEntityObserver>* observer, ArtemisEnti
 
 -(void) process
 {
+	if( self.objcDebugEachTick )
+		NSLog(@"Ticking World...");
+	self.objDebugNumTicksSinceStarted++;
+	
 	[self check:self.added withBlock:^(NSObject<ArtemisEntityObserver> *observer, ArtemisEntity *entity) {
 		[observer added:entity];
 	}];
@@ -219,5 +228,7 @@ typedef void (^Performer)(NSObject<ArtemisEntityObserver>* observer, ArtemisEnti
 		}
 	}
 }
+
+#pragma mark - ObjectiveC customizations
 
 @end

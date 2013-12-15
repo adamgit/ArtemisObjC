@@ -17,15 +17,21 @@
 	return newValue;
 }
 
+/** Objc: prevent people from bypassing the contructor */
+- (id)init
+{
+    return [self initWithCapacity:10];
+}
+
 -(id)initWithCapacity:(NSInteger) c
 {
     self = [super init];
     if (self) {
         self.data = [NSMutableArray arrayWithCapacity:c];
 		self.filledItems = 0;
-		for( int i=0; i<self.data.count; i++ )
+		for( int i=0; i<c; i++ ) // ObjC: Note Apple's nasty nsarray capacity isn't readable
 		{
-			[self.data replaceObjectAtIndex:i withObject:[NSNull null]];
+			[self.data addObject:[NSNull null]];
 		}
     }
     return self;

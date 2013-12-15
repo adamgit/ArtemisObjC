@@ -5,6 +5,8 @@
 #import "ArtemisEntityManager.h"
 #import "ArtemisComponentManager.h"
 
+@class ArtemisEntitySystem;
+
 @interface ArtemisWorld : NSObject
 
 @property (nonatomic) float delta;
@@ -14,10 +16,17 @@
 
 -(void) initialize;
 
+-(ArtemisEntity*) createEntity;
+-(ArtemisEntity*) getEntity:(int) entityId;
+
 -(void) addEntity:(ArtemisEntity*) entity;
 -(void) changedEntity:(ArtemisEntity*) entity;
 -(void) deleteEntity:(ArtemisEntity*) entity;
 -(void) enable:(ArtemisEntity*) entity;
 -(void) disable:(ArtemisEntity*) entity;
+
+-(ArtemisEntitySystem*) setSystem:(ArtemisEntitySystem*) system;
+-(void) deleteSystem:(ArtemisEntitySystem*) system;
+-(ArtemisEntitySystem*) getSystem:(Class) c;
 
 @end
