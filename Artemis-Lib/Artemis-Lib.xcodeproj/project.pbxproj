@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		66141C97185E426F00712C78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66141C96185E426F00712C78 /* Foundation.framework */; };
+		66141C9C185E426F00712C78 /* Artemis_Lib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66141C9B185E426F00712C78 /* Artemis_Lib.h */; };
+		66141C9E185E426F00712C78 /* Artemis_Lib.m in Sources */ = {isa = PBXBuildFile; fileRef = 66141C9D185E426F00712C78 /* Artemis_Lib.m */; };
+		66141CA5185E426F00712C78 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66141CA4185E426F00712C78 /* XCTest.framework */; };
+		66141CA6185E426F00712C78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66141C96185E426F00712C78 /* Foundation.framework */; };
+		66141CA8185E426F00712C78 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66141CA7185E426F00712C78 /* UIKit.framework */; };
+		66141CAB185E426F00712C78 /* libArtemis-Lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66141C93185E426F00712C78 /* libArtemis-Lib.a */; };
+		66141CB1185E426F00712C78 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66141CAF185E426F00712C78 /* InfoPlist.strings */; };
+		66141CB3185E426F00712C78 /* Artemis_LibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66141CB2185E426F00712C78 /* Artemis_LibTests.m */; };
+		66141CD6185E429600712C78 /* ArtemisAspect.m in Sources */ = {isa = PBXBuildFile; fileRef = 66141CBE185E429600712C78 /* ArtemisAspect.m */; };
+		66141CD7185E429600712C78 /* ArtemisBag.m in Sources */ = {isa = PBXBuildFile; fileRef = 66141CC0185E429600712C78 /* ArtemisBag.m */; };
+		66141CD8185E429600712C78 /* ArtemisBitSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 66141CC2185E429600712C78 /* ArtemisBitSet.m */; };
+		66141CD9185E429600712C78 /* ArtemisComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 66141CC4185E429600712C78 /* ArtemisComponent.m */; };
+		66141CDA185E429600712C78 /* ArtemisComponentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66141CC6185E429600712C78 /* ArtemisComponentManager.m */; };
+		66141CDB185E429600712C78 /* ArtemisComponentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 66141CC8185E429600712C78 /* ArtemisComponentType.m */; };
+		66141CDC185E429600712C78 /* ArtemisEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 66141CCA185E429600712C78 /* ArtemisEntity.m */; };
+		66141CDD185E429600712C78 /* ArtemisEntityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66141CCC185E429600712C78 /* ArtemisEntityManager.m */; };
+		66141CDF185E429600712C78 /* ArtemisEntitySystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 66141CD0185E429600712C78 /* ArtemisEntitySystem.m */; };
+		66141CE0185E429600712C78 /* ArtemisManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66141CD3185E429600712C78 /* ArtemisManager.m */; };
+		66141CE1185E429600712C78 /* ArtemisWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = 66141CD5185E429600712C78 /* ArtemisWorld.m */; };
+		66141CE7185E58E600712C78 /* Position.m in Sources */ = {isa = PBXBuildFile; fileRef = 66141CE6185E58E600712C78 /* Position.m */; };
+		66141CEA185E5AE300712C78 /* ArtemisComponentMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 66141CE9185E5AE300712C78 /* ArtemisComponentMapper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66141CA9185E426F00712C78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66141C8B185E426F00712C78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66141C92185E426F00712C78;
+			remoteInfo = "Artemis-Lib";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		66141C91185E426F00712C78 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				66141C9C185E426F00712C78 /* Artemis_Lib.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		66141C93185E426F00712C78 /* libArtemis-Lib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libArtemis-Lib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66141C96185E426F00712C78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		66141C9A185E426F00712C78 /* Artemis-Lib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Artemis-Lib-Prefix.pch"; sourceTree = "<group>"; };
+		66141C9B185E426F00712C78 /* Artemis_Lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Artemis_Lib.h; sourceTree = "<group>"; };
+		66141C9D185E426F00712C78 /* Artemis_Lib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Artemis_Lib.m; sourceTree = "<group>"; };
+		66141CA3185E426F00712C78 /* Artemis-LibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Artemis-LibTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66141CA4185E426F00712C78 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		66141CA7185E426F00712C78 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		66141CAE185E426F00712C78 /* Artemis-LibTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Artemis-LibTests-Info.plist"; sourceTree = "<group>"; };
+		66141CB0185E426F00712C78 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		66141CB2185E426F00712C78 /* Artemis_LibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Artemis_LibTests.m; sourceTree = "<group>"; };
+		66141CBD185E429600712C78 /* ArtemisAspect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtemisAspect.h; sourceTree = "<group>"; };
+		66141CBE185E429600712C78 /* ArtemisAspect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtemisAspect.m; sourceTree = "<group>"; };
+		66141CBF185E429600712C78 /* ArtemisBag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtemisBag.h; sourceTree = "<group>"; };
+		66141CC0185E429600712C78 /* ArtemisBag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtemisBag.m; sourceTree = "<group>"; };
+		66141CC1185E429600712C78 /* ArtemisBitSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtemisBitSet.h; sourceTree = "<group>"; };
+		66141CC2185E429600712C78 /* ArtemisBitSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtemisBitSet.m; sourceTree = "<group>"; };
+		66141CC3185E429600712C78 /* ArtemisComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtemisComponent.h; sourceTree = "<group>"; };
+		66141CC4185E429600712C78 /* ArtemisComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtemisComponent.m; sourceTree = "<group>"; };
+		66141CC5185E429600712C78 /* ArtemisComponentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtemisComponentManager.h; sourceTree = "<group>"; };
+		66141CC6185E429600712C78 /* ArtemisComponentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtemisComponentManager.m; sourceTree = "<group>"; };
+		66141CC7185E429600712C78 /* ArtemisComponentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtemisComponentType.h; sourceTree = "<group>"; };
+		66141CC8185E429600712C78 /* ArtemisComponentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtemisComponentType.m; sourceTree = "<group>"; };
+		66141CC9185E429600712C78 /* ArtemisEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtemisEntity.h; sourceTree = "<group>"; };
+		66141CCA185E429600712C78 /* ArtemisEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtemisEntity.m; sourceTree = "<group>"; };
+		66141CCB185E429600712C78 /* ArtemisEntityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtemisEntityManager.h; sourceTree = "<group>"; };
+		66141CCC185E429600712C78 /* ArtemisEntityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtemisEntityManager.m; sourceTree = "<group>"; };
+		66141CCD185E429600712C78 /* ArtemisEntityObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtemisEntityObserver.h; sourceTree = "<group>"; };
+		66141CCF185E429600712C78 /* ArtemisEntitySystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtemisEntitySystem.h; sourceTree = "<group>"; };
+		66141CD0185E429600712C78 /* ArtemisEntitySystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtemisEntitySystem.m; sourceTree = "<group>"; };
+		66141CD1185E429600712C78 /* ArtemisImmutableBag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtemisImmutableBag.h; sourceTree = "<group>"; };
+		66141CD2185E429600712C78 /* ArtemisManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtemisManager.h; sourceTree = "<group>"; };
+		66141CD3185E429600712C78 /* ArtemisManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtemisManager.m; sourceTree = "<group>"; };
+		66141CD4185E429600712C78 /* ArtemisWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtemisWorld.h; sourceTree = "<group>"; };
+		66141CD5185E429600712C78 /* ArtemisWorld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtemisWorld.m; sourceTree = "<group>"; };
+		66141CE5185E58E600712C78 /* Position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Position.h; sourceTree = "<group>"; };
+		66141CE6185E58E600712C78 /* Position.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Position.m; sourceTree = "<group>"; };
+		66141CE8185E5AE300712C78 /* ArtemisComponentMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtemisComponentMapper.h; sourceTree = "<group>"; };
+		66141CE9185E5AE300712C78 /* ArtemisComponentMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtemisComponentMapper.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66141C90185E426F00712C78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66141C97185E426F00712C78 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66141CA0185E426F00712C78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66141CA5185E426F00712C78 /* XCTest.framework in Frameworks */,
+				66141CA8185E426F00712C78 /* UIKit.framework in Frameworks */,
+				66141CA6185E426F00712C78 /* Foundation.framework in Frameworks */,
+				66141CAB185E426F00712C78 /* libArtemis-Lib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66141C8A185E426F00712C78 = {
+			isa = PBXGroup;
+			children = (
+				66141C98185E426F00712C78 /* Artemis-Lib */,
+				66141CAC185E426F00712C78 /* Artemis-LibTests */,
+				66141C95185E426F00712C78 /* Frameworks */,
+				66141C94185E426F00712C78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		66141C94185E426F00712C78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66141C93185E426F00712C78 /* libArtemis-Lib.a */,
+				66141CA3185E426F00712C78 /* Artemis-LibTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66141C95185E426F00712C78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66141C96185E426F00712C78 /* Foundation.framework */,
+				66141CA4185E426F00712C78 /* XCTest.framework */,
+				66141CA7185E426F00712C78 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66141C98185E426F00712C78 /* Artemis-Lib */ = {
+			isa = PBXGroup;
+			children = (
+				66141C9B185E426F00712C78 /* Artemis_Lib.h */,
+				66141C9D185E426F00712C78 /* Artemis_Lib.m */,
+				66141CBC185E428C00712C78 /* Classes */,
+				66141CE2185E58C100712C78 /* Examples */,
+				66141C99185E426F00712C78 /* Supporting Files */,
+			);
+			path = "Artemis-Lib";
+			sourceTree = "<group>";
+		};
+		66141C99185E426F00712C78 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				66141C9A185E426F00712C78 /* Artemis-Lib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		66141CAC185E426F00712C78 /* Artemis-LibTests */ = {
+			isa = PBXGroup;
+			children = (
+				66141CB2185E426F00712C78 /* Artemis_LibTests.m */,
+				66141CAD185E426F00712C78 /* Supporting Files */,
+			);
+			path = "Artemis-LibTests";
+			sourceTree = "<group>";
+		};
+		66141CAD185E426F00712C78 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				66141CAE185E426F00712C78 /* Artemis-LibTests-Info.plist */,
+				66141CAF185E426F00712C78 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		66141CBC185E428C00712C78 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				66141CBD185E429600712C78 /* ArtemisAspect.h */,
+				66141CBE185E429600712C78 /* ArtemisAspect.m */,
+				66141CBF185E429600712C78 /* ArtemisBag.h */,
+				66141CC0185E429600712C78 /* ArtemisBag.m */,
+				66141CC1185E429600712C78 /* ArtemisBitSet.h */,
+				66141CC2185E429600712C78 /* ArtemisBitSet.m */,
+				66141CC3185E429600712C78 /* ArtemisComponent.h */,
+				66141CC4185E429600712C78 /* ArtemisComponent.m */,
+				66141CC5185E429600712C78 /* ArtemisComponentManager.h */,
+				66141CC6185E429600712C78 /* ArtemisComponentManager.m */,
+				66141CC7185E429600712C78 /* ArtemisComponentType.h */,
+				66141CC8185E429600712C78 /* ArtemisComponentType.m */,
+				66141CE8185E5AE300712C78 /* ArtemisComponentMapper.h */,
+				66141CE9185E5AE300712C78 /* ArtemisComponentMapper.m */,
+				66141CC9185E429600712C78 /* ArtemisEntity.h */,
+				66141CCA185E429600712C78 /* ArtemisEntity.m */,
+				66141CCB185E429600712C78 /* ArtemisEntityManager.h */,
+				66141CCC185E429600712C78 /* ArtemisEntityManager.m */,
+				66141CCD185E429600712C78 /* ArtemisEntityObserver.h */,
+				66141CCF185E429600712C78 /* ArtemisEntitySystem.h */,
+				66141CD0185E429600712C78 /* ArtemisEntitySystem.m */,
+				66141CD1185E429600712C78 /* ArtemisImmutableBag.h */,
+				66141CD2185E429600712C78 /* ArtemisManager.h */,
+				66141CD3185E429600712C78 /* ArtemisManager.m */,
+				66141CD4185E429600712C78 /* ArtemisWorld.h */,
+				66141CD5185E429600712C78 /* ArtemisWorld.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		66141CE2185E58C100712C78 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				66141CE3185E58D400712C78 /* Components */,
+				66141CE4185E58D400712C78 /* Systems */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		66141CE3185E58D400712C78 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				66141CE5185E58E600712C78 /* Position.h */,
+				66141CE6185E58E600712C78 /* Position.m */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		66141CE4185E58D400712C78 /* Systems */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Systems;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66141C92185E426F00712C78 /* Artemis-Lib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66141CB6185E426F00712C78 /* Build configuration list for PBXNativeTarget "Artemis-Lib" */;
+			buildPhases = (
+				66141C8F185E426F00712C78 /* Sources */,
+				66141C90185E426F00712C78 /* Frameworks */,
+				66141C91185E426F00712C78 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Artemis-Lib";
+			productName = "Artemis-Lib";
+			productReference = 66141C93185E426F00712C78 /* libArtemis-Lib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		66141CA2185E426F00712C78 /* Artemis-LibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66141CB9185E426F00712C78 /* Build configuration list for PBXNativeTarget "Artemis-LibTests" */;
+			buildPhases = (
+				66141C9F185E426F00712C78 /* Sources */,
+				66141CA0185E426F00712C78 /* Frameworks */,
+				66141CA1185E426F00712C78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66141CAA185E426F00712C78 /* PBXTargetDependency */,
+			);
+			name = "Artemis-LibTests";
+			productName = "Artemis-LibTests";
+			productReference = 66141CA3185E426F00712C78 /* Artemis-LibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66141C8B185E426F00712C78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = n/a;
+			};
+			buildConfigurationList = 66141C8E185E426F00712C78 /* Build configuration list for PBXProject "Artemis-Lib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 66141C8A185E426F00712C78;
+			productRefGroup = 66141C94185E426F00712C78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66141C92185E426F00712C78 /* Artemis-Lib */,
+				66141CA2185E426F00712C78 /* Artemis-LibTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66141CA1185E426F00712C78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66141CB1185E426F00712C78 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66141C8F185E426F00712C78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66141C9E185E426F00712C78 /* Artemis_Lib.m in Sources */,
+				66141CD6185E429600712C78 /* ArtemisAspect.m in Sources */,
+				66141CD8185E429600712C78 /* ArtemisBitSet.m in Sources */,
+				66141CDF185E429600712C78 /* ArtemisEntitySystem.m in Sources */,
+				66141CE1185E429600712C78 /* ArtemisWorld.m in Sources */,
+				66141CD7185E429600712C78 /* ArtemisBag.m in Sources */,
+				66141CEA185E5AE300712C78 /* ArtemisComponentMapper.m in Sources */,
+				66141CDC185E429600712C78 /* ArtemisEntity.m in Sources */,
+				66141CE7185E58E600712C78 /* Position.m in Sources */,
+				66141CD9185E429600712C78 /* ArtemisComponent.m in Sources */,
+				66141CE0185E429600712C78 /* ArtemisManager.m in Sources */,
+				66141CDA185E429600712C78 /* ArtemisComponentManager.m in Sources */,
+				66141CDB185E429600712C78 /* ArtemisComponentType.m in Sources */,
+				66141CDD185E429600712C78 /* ArtemisEntityManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66141C9F185E426F00712C78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66141CB3185E426F00712C78 /* Artemis_LibTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66141CAA185E426F00712C78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66141C92185E426F00712C78 /* Artemis-Lib */;
+			targetProxy = 66141CA9185E426F00712C78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		66141CAF185E426F00712C78 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66141CB0185E426F00712C78 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66141CB4185E426F00712C78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		66141CB5185E426F00712C78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66141CB7185E426F00712C78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Artemis_Lib.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Artemis-Lib/Artemis-Lib-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		66141CB8185E426F00712C78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Artemis_Lib.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Artemis-Lib/Artemis-Lib-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		66141CBA185E426F00712C78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Artemis-Lib/Artemis-Lib-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Artemis-LibTests/Artemis-LibTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		66141CBB185E426F00712C78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Artemis-Lib/Artemis-Lib-Prefix.pch";
+				INFOPLIST_FILE = "Artemis-LibTests/Artemis-LibTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66141C8E185E426F00712C78 /* Build configuration list for PBXProject "Artemis-Lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66141CB4185E426F00712C78 /* Debug */,
+				66141CB5185E426F00712C78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66141CB6185E426F00712C78 /* Build configuration list for PBXNativeTarget "Artemis-Lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66141CB7185E426F00712C78 /* Debug */,
+				66141CB8185E426F00712C78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66141CB9185E426F00712C78 /* Build configuration list for PBXNativeTarget "Artemis-LibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66141CBA185E426F00712C78 /* Debug */,
+				66141CBB185E426F00712C78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66141C8B185E426F00712C78 /* Project object */;
+}
