@@ -59,7 +59,19 @@
 	
 	/** FIXME: not implemented as high performance yet */
 	
-	NSAssert(FALSE, @"ARGH");
+	for( int i = 0; i < self.size; i++ )
+	{
+		id itemOriginal = [self.data objectAtIndex:i];
+		
+		if( itemOriginal == item )
+		{
+			[self.data replaceObjectAtIndex:i withObject:[self.data objectAtIndex:self.size-1]];
+			[self.data replaceObjectAtIndex:self.size-1 withObject:[NSNull null]];
+			self.filledItems--;
+			
+			return TRUE;
+		}
+	}
 	
 	return FALSE;
 }
