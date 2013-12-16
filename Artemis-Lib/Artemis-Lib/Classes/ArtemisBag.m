@@ -1,7 +1,6 @@
 #import "ArtemisBag.h"
 
 @interface ArtemisBag()
-@property(nonatomic,readwrite) BOOL isEmpty;
 
 /** FIXME: not implemented as high performance yet */
 @property(nonatomic,retain) NSMutableArray* data;
@@ -124,6 +123,11 @@
 -(BOOL) isIndexWithinBounds:(int) bounds
 {
 	return bounds < self.capacity;
+}
+
+-(BOOL)isEmpty
+{
+	return self.size == 0;
 }
 
 -(void) add:(NSObject*) item

@@ -41,6 +41,7 @@
 -(void) clear
 {
 	CFBitVectorSetAllBits( bitVector, 0 );
+	CFBitVectorSetCount(bitVector, 0);
 }
 
 -(void)clear:(CFIndex)index
@@ -50,7 +51,13 @@
 
 -(void)set:(CFIndex)index
 {
+	/** ObjC: Apple's class is insane. it will set and get bits, but fail to update the count */
+	if( CFBitVectorGetCount(bitVector) <= index )
+		CFBitVectorSetCount(bitVector, index+1);
+	
 	CFBitVectorSetBitAtIndex(bitVector, index, 1);
+	
+	NSLog(@"After setting bit at index = %li, bit at index %li = %i", index, index, CFBitVectorGetBitAtIndex(bitVector, index));
 }
 
 -(BOOL)get:(CFIndex)index

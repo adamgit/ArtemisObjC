@@ -10,7 +10,7 @@
 
 +(MovementSystem *)movementSystem
 {
-	MovementSystem* m = [[MovementSystem new] autorelease];
+	MovementSystem* m = [[[MovementSystem alloc] initWithAspect:[ArtemisAspect aspectForAll:@[ [Position class], [Velocity class]]]] autorelease];
 	
 	return m;
 }

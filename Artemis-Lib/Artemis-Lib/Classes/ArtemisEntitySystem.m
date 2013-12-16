@@ -101,7 +101,7 @@ static NSMutableDictionary* indices;
 	
 	ArtemisBitSet* componentBits = entity.componentBits;
 	
-	if( ! self.allSet.isEmpty )
+	if( /** ObjC: nil will break Artemis main here */ self.allSet != nil && ! self.allSet.isEmpty )
 	{
 		for( long i = [self.allSet nextSetBit:0]; i >= 0; i = [self.allSet nextSetBit:i+1] )
 		{
@@ -113,12 +113,12 @@ static NSMutableDictionary* indices;
 		}
 	}
 	
-	if( ! self.exclusionSet.isEmpty )
+	if( /** ObjC: nil will break Artemis main here */ self.exclusionSet != nil && ! self.exclusionSet.isEmpty )
 	{
 		interested = ! [self.exclusionSet intersects: componentBits];
 	}
 	
-	if( ! self.oneSet.isEmpty )
+	if( /** ObjC: nil will break Artemis main here */ self.oneSet != nil && ! self.oneSet.isEmpty )
 	{
 		interested = [self.oneSet intersects: componentBits];
 	}
@@ -127,7 +127,7 @@ static NSMutableDictionary* indices;
 	{
 		[self insertToSystem:entity];
 	}
-	else
+	else if( !(interested) && contains)
 	{
 		[self removeFromSystem:entity];
 	}

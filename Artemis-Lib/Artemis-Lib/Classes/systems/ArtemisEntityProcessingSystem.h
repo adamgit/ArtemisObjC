@@ -10,6 +10,9 @@
 
 +(ArtemisEntityProcessingSystem*) entityProcessingSystemWithAspect:(ArtemisAspect*) aspect;
 
+/** ObjC subclasses need to see this */
+- (id)initWithAspect:(ArtemisAspect*) aspect;
+
 -(void) process:(ArtemisEntity*) entity;
 
 @end

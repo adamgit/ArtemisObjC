@@ -83,8 +83,9 @@
 	ArtemisEntity* e1 = [world createEntity];
 	[e1 addComponent:[Position positionWithX:0 y:0]];
 	[e1 addComponent:[Velocity velocityWithDeltaX:1 deltaY:0]];
+	[world addEntity:e1];
 	
-	NSTimeInterval tickRate = 0.1;
+	NSTimeInterval tickRate = 1.0;
 	[NSTimer scheduledTimerWithTimeInterval:tickRate target:world selector:@selector(process) userInfo:nil repeats:TRUE];
 	
 	[self prepare];
@@ -101,6 +102,6 @@
 		[self notify:kXCTUnitWaitStatusSuccess];
 	});
 	
-	[self waitForStatus:kXCTUnitWaitStatusSuccess timeout:4.0];
+	[self waitForStatus:kXCTUnitWaitStatusSuccess timeout:600.0];
 }
 @end
