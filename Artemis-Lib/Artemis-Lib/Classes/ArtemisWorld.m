@@ -168,7 +168,7 @@ typedef void (^Performer)(NSObject<ArtemisEntityObserver>* observer, ArtemisEnti
 {
 	for( NSInteger i=0, s = self.managersBag.size; s > i; i++ )
 	{
-		performer( (NSObject<ArtemisEntityObserver>*)[self.systemsBag get:i], entity );
+		performer( (NSObject<ArtemisEntityObserver>*)[self.managersBag get:i], entity );
 	}
 }
 
