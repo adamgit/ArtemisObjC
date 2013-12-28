@@ -34,6 +34,22 @@
 		66141CF4185E6BBA00712C78 /* MovementSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 66141CF3185E6BBA00712C78 /* MovementSystem.m */; };
 		66141CF7185E6CA800712C78 /* Velocity.m in Sources */ = {isa = PBXBuildFile; fileRef = 66141CF6185E6CA800712C78 /* Velocity.m */; };
 		66141CFC185E710400712C78 /* XCTAsyncTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 66141CFA185E710400712C78 /* XCTAsyncTestCase.m */; };
+		6631F154186F19E600C6E1AC /* ArtemisAspect.h in Headers */ = {isa = PBXBuildFile; fileRef = 66141CBD185E429600712C78 /* ArtemisAspect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6631F155186F19E600C6E1AC /* ArtemisBag.h in Headers */ = {isa = PBXBuildFile; fileRef = 66141CBF185E429600712C78 /* ArtemisBag.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6631F156186F19E600C6E1AC /* ArtemisBitSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 66141CC1185E429600712C78 /* ArtemisBitSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6631F157186F19E600C6E1AC /* ArtemisComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 66141CC3185E429600712C78 /* ArtemisComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6631F158186F19E600C6E1AC /* ArtemisComponentManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 66141CC5185E429600712C78 /* ArtemisComponentManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6631F159186F19E600C6E1AC /* ArtemisComponentType.h in Headers */ = {isa = PBXBuildFile; fileRef = 66141CC7185E429600712C78 /* ArtemisComponentType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6631F15A186F19E600C6E1AC /* ArtemisComponentMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 66141CE8185E5AE300712C78 /* ArtemisComponentMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6631F15B186F19E600C6E1AC /* ArtemisEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 66141CC9185E429600712C78 /* ArtemisEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6631F15C186F19E600C6E1AC /* ArtemisEntityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 66141CCB185E429600712C78 /* ArtemisEntityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6631F15D186F19E600C6E1AC /* ArtemisEntityObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 66141CCD185E429600712C78 /* ArtemisEntityObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6631F15E186F19E600C6E1AC /* ArtemisEntitySystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 66141CCF185E429600712C78 /* ArtemisEntitySystem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6631F15F186F19E600C6E1AC /* ArtemisImmutableBag.h in Headers */ = {isa = PBXBuildFile; fileRef = 66141CD1185E429600712C78 /* ArtemisImmutableBag.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6631F160186F19E600C6E1AC /* ArtemisManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 66141CD2185E429600712C78 /* ArtemisManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6631F161186F19E600C6E1AC /* ArtemisWorld.h in Headers */ = {isa = PBXBuildFile; fileRef = 66141CD4185E429600712C78 /* ArtemisWorld.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6631F162186F1A0F00C6E1AC /* ArtemisEntityProcessingSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 66141CEF185E69FF00712C78 /* ArtemisEntityProcessingSystem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6631F164186F1A2000C6E1AC /* ArtemisWorld_Debug.h in Headers */ = {isa = PBXBuildFile; fileRef = 66141CF9185E6DEB00712C78 /* ArtemisWorld_Debug.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -289,6 +305,32 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		6631F153186F19C200C6E1AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6631F157186F19E600C6E1AC /* ArtemisComponent.h in Headers */,
+				6631F161186F19E600C6E1AC /* ArtemisWorld.h in Headers */,
+				6631F160186F19E600C6E1AC /* ArtemisManager.h in Headers */,
+				6631F15D186F19E600C6E1AC /* ArtemisEntityObserver.h in Headers */,
+				6631F154186F19E600C6E1AC /* ArtemisAspect.h in Headers */,
+				6631F159186F19E600C6E1AC /* ArtemisComponentType.h in Headers */,
+				6631F15A186F19E600C6E1AC /* ArtemisComponentMapper.h in Headers */,
+				6631F15C186F19E600C6E1AC /* ArtemisEntityManager.h in Headers */,
+				6631F15F186F19E600C6E1AC /* ArtemisImmutableBag.h in Headers */,
+				6631F155186F19E600C6E1AC /* ArtemisBag.h in Headers */,
+				6631F156186F19E600C6E1AC /* ArtemisBitSet.h in Headers */,
+				6631F158186F19E600C6E1AC /* ArtemisComponentManager.h in Headers */,
+				6631F162186F1A0F00C6E1AC /* ArtemisEntityProcessingSystem.h in Headers */,
+				6631F164186F1A2000C6E1AC /* ArtemisWorld_Debug.h in Headers */,
+				6631F15B186F19E600C6E1AC /* ArtemisEntity.h in Headers */,
+				6631F15E186F19E600C6E1AC /* ArtemisEntitySystem.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		66141C92185E426F00712C78 /* Artemis-Lib */ = {
 			isa = PBXNativeTarget;
@@ -297,6 +339,8 @@
 				66141C8F185E426F00712C78 /* Sources */,
 				66141C90185E426F00712C78 /* Frameworks */,
 				66141C91185E426F00712C78 /* CopyFiles */,
+				6631F153186F19C200C6E1AC /* Headers */,
+				6631F152186F18ED00C6E1AC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -362,6 +406,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6631F152186F18ED00C6E1AC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "##########################################\n#\n# c.f. http://stackoverflow.com/questions/3520977/build-fat-static-library-device-simulator-using-xcode-and-sdk-4\n#\n# Version 2.7\n#\n# Latest Change:\n# - Supports iPhone 5 / iPod Touch 5 (uses Apple's workaround to lipo bug)\n# \n# Purpose:\n#   Automatically create a Universal static library for iPhone + iPad + iPhone Simulator from within XCode\n#\n# Author: Adam Martin - http://twitter.com/redglassesapps\n# Based on: original script from Eonil (main changes: Eonil's script WILL NOT WORK in Xcode GUI - it WILL CRASH YOUR COMPUTER)\n#\n\nset -e\nset -o pipefail\n\n#################[ Tests: helps workaround any future bugs in Xcode ]########\n#\nDEBUG_THIS_SCRIPT=\"false\"\n\nif [ $DEBUG_THIS_SCRIPT = \"true\" ]\nthen\necho \"########### TESTS #############\"\necho \"Use the following variables when debugging this script; note that they may change on recursions\"\necho \"BUILD_DIR = $BUILD_DIR\"\necho \"BUILD_ROOT = $BUILD_ROOT\"\necho \"CONFIGURATION_BUILD_DIR = $CONFIGURATION_BUILD_DIR\"\necho \"BUILT_PRODUCTS_DIR = $BUILT_PRODUCTS_DIR\"\necho \"CONFIGURATION_TEMP_DIR = $CONFIGURATION_TEMP_DIR\"\necho \"TARGET_BUILD_DIR = $TARGET_BUILD_DIR\"\nfi\n\n#####################[ part 1 ]##################\n# First, work out the BASESDK version number (NB: Apple ought to report this, but they hide it)\n#    (incidental: searching for substrings in sh is a nightmare! Sob)\n\nSDK_VERSION=$(echo ${SDK_NAME} | grep -o '.\\{3\\}$')\n\n# Next, work out if we're in SIM or DEVICE\n\nif [ ${PLATFORM_NAME} = \"iphonesimulator\" ]\nthen\nOTHER_SDK_TO_BUILD=iphoneos${SDK_VERSION}\nelse\nOTHER_SDK_TO_BUILD=iphonesimulator${SDK_VERSION}\nfi\n\necho \"XCode has selected SDK: ${PLATFORM_NAME} with version: ${SDK_VERSION} (although back-targetting: ${IPHONEOS_DEPLOYMENT_TARGET})\"\necho \"...therefore, OTHER_SDK_TO_BUILD = ${OTHER_SDK_TO_BUILD}\"\n#\n#####################[ end of part 1 ]##################\n\n#####################[ part 2 ]##################\n#\n# IF this is the original invocation, invoke WHATEVER other builds are required\n#\n# Xcode is already building ONE target...\n#\n# ...but this is a LIBRARY, so Apple is wrong to set it to build just one.\n# ...we need to build ALL targets\n# ...we MUST NOT re-build the target that is ALREADY being built: Xcode WILL CRASH YOUR COMPUTER if you try this (infinite recursion!)\n#\n#\n# So: build ONLY the missing platforms/configurations.\n\nif [ \"true\" == ${ALREADYINVOKED:-false} ]\nthen\necho \"RECURSION: I am NOT the root invocation, so I'm NOT going to recurse\"\nelse\n# CRITICAL:\n# Prevent infinite recursion (Xcode sucks)\nexport ALREADYINVOKED=\"true\"\n\necho \"RECURSION: I am the root ... recursing all missing build targets NOW...\"\necho \"RECURSION: ...about to invoke: xcodebuild -configuration \\\"${CONFIGURATION}\\\" -project \\\"${PROJECT_NAME}.xcodeproj\\\" -target \\\"${TARGET_NAME}\\\" -sdk \\\"${OTHER_SDK_TO_BUILD}\\\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO\" BUILD_DIR=\\\"${BUILD_DIR}\\\" BUILD_ROOT=\\\"${BUILD_ROOT}\\\" SYMROOT=\\\"${SYMROOT}\\\"\n\nxcodebuild -configuration \"${CONFIGURATION}\" -project \"${PROJECT_NAME}.xcodeproj\" -target \"${TARGET_NAME}\" -sdk \"${OTHER_SDK_TO_BUILD}\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\"\n\nACTION=\"build\"\n\n#Merge all platform binaries as a fat binary for each configurations.\n\n# Calculate where the (multiple) built files are coming from:\nCURRENTCONFIG_DEVICE_DIR=${SYMROOT}/${CONFIGURATION}-iphoneos\nCURRENTCONFIG_SIMULATOR_DIR=${SYMROOT}/${CONFIGURATION}-iphonesimulator\n\necho \"Taking device build from: ${CURRENTCONFIG_DEVICE_DIR}\"\necho \"Taking simulator build from: ${CURRENTCONFIG_SIMULATOR_DIR}\"\n\nCREATING_UNIVERSAL_DIR=${SYMROOT}/${CONFIGURATION}-universal\necho \"...I will output a universal build to: ${CREATING_UNIVERSAL_DIR}\"\n\n# ... remove the products of previous runs of this script\n#      NB: this directory is ONLY created by this script - it should be safe to delete!\n\nrm -rf \"${CREATING_UNIVERSAL_DIR}\"\nmkdir \"${CREATING_UNIVERSAL_DIR}\"\n\n#\necho \"lipo: for current configuration (${CONFIGURATION}) creating output file: ${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\"\nxcrun -sdk iphoneos lipo -create -output \"${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_DEVICE_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_SIMULATOR_DIR}/${EXECUTABLE_NAME}\"\n\n#########\n#\n# Added: StackOverflow suggestion to also copy \"include\" files\n#    (untested, but should work OK)\n#\necho \"Fetching headers from ${PUBLIC_HEADERS_FOLDER_PATH}\"\necho \"  (if you embed your library project in another project, you will need to add\"\necho \"   a \"User Search Headers\" build setting of: (NB INCLUDE THE DOUBLE QUOTES BELOW!)\"\necho '        \"$(TARGET_BUILD_DIR)/usr/local/include/\"'\nif [ -d \"${CURRENTCONFIG_DEVICE_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\" ]\nthen\nmkdir -p \"${CREATING_UNIVERSAL_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\"\n# * needs to be outside the double quotes?\ncp -r \"${CURRENTCONFIG_DEVICE_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\"* \"${CREATING_UNIVERSAL_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\"\nfi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		66141C8F185E426F00712C78 /* Sources */ = {
