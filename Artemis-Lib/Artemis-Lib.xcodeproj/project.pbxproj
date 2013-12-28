@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		66141C97185E426F00712C78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66141C96185E426F00712C78 /* Foundation.framework */; };
-		66141C9C185E426F00712C78 /* Artemis_Lib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66141C9B185E426F00712C78 /* Artemis_Lib.h */; };
 		66141C9E185E426F00712C78 /* Artemis_Lib.m in Sources */ = {isa = PBXBuildFile; fileRef = 66141C9D185E426F00712C78 /* Artemis_Lib.m */; };
 		66141CA5185E426F00712C78 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66141CA4185E426F00712C78 /* XCTest.framework */; };
 		66141CA6185E426F00712C78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66141C96185E426F00712C78 /* Foundation.framework */; };
@@ -50,6 +49,7 @@
 		6631F161186F19E600C6E1AC /* ArtemisWorld.h in Headers */ = {isa = PBXBuildFile; fileRef = 66141CD4185E429600712C78 /* ArtemisWorld.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6631F162186F1A0F00C6E1AC /* ArtemisEntityProcessingSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 66141CEF185E69FF00712C78 /* ArtemisEntityProcessingSystem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6631F164186F1A2000C6E1AC /* ArtemisWorld_Debug.h in Headers */ = {isa = PBXBuildFile; fileRef = 66141CF9185E6DEB00712C78 /* ArtemisWorld_Debug.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6631F17C186F204600C6E1AC /* Artemis_Lib.h in Headers */ = {isa = PBXBuildFile; fileRef = 66141C9B185E426F00712C78 /* Artemis_Lib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +69,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				66141C9C185E426F00712C78 /* Artemis_Lib.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +319,7 @@
 				6631F15C186F19E600C6E1AC /* ArtemisEntityManager.h in Headers */,
 				6631F15F186F19E600C6E1AC /* ArtemisImmutableBag.h in Headers */,
 				6631F155186F19E600C6E1AC /* ArtemisBag.h in Headers */,
+				6631F17C186F204600C6E1AC /* Artemis_Lib.h in Headers */,
 				6631F156186F19E600C6E1AC /* ArtemisBitSet.h in Headers */,
 				6631F158186F19E600C6E1AC /* ArtemisComponentManager.h in Headers */,
 				6631F162186F1A0F00C6E1AC /* ArtemisEntityProcessingSystem.h in Headers */,

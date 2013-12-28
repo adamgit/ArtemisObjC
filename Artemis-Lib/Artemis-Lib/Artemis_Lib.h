@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+#import "ArtemisEntity.h"
+#import "ArtemisWorld.h"
+#import "ArtemisComponent.h"
+#import "ArtemisManager.h"
+#import "ArtemisEntitySystem.h"
+#import "ArtemisEntityManager.h"
+
 @interface Artemis_Lib : NSObject
 
 @end
