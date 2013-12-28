@@ -19,6 +19,7 @@
 {
 	ArtemisEntity* newValue = [[ArtemisEntity new] autorelease];
 	
+    newValue.Id = newID;
 	newValue.world = world;
 	newValue.entityManager = world.entityManager;
 	newValue.componentManager = world.componentManager;
