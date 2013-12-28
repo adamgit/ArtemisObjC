@@ -57,7 +57,7 @@
 	
 	CFBitVectorSetBitAtIndex(bitVector, index, 1);
 	
-	NSLog(@"After setting bit at index = %li, bit at index %li = %i", index, index, CFBitVectorGetBitAtIndex(bitVector, index));
+	NSLog(@"After setting bit at index = %li, bit at index %li = %i", index, index, (unsigned int)CFBitVectorGetBitAtIndex(bitVector, index));
 }
 
 -(BOOL)get:(CFIndex)index
