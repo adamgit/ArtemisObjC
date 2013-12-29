@@ -10,6 +10,8 @@ Objective-C port of Artemis Entity System - c.f. http://gamadu.com/artemis/
 
 # Instructions
 
+More info, with longer explanations, here: http://t-machine.org/index.php/2013/12/29/artemis-entity-system-in-objectivec/
+
 ## ObjectiveC shortcuts
 
 1. Generics: -- no solution yet (ObjC doesn't support them!), but look at the ObjectiveCGenerics.h file for an idea that might be usable with ArtemisBag, ArtemisComponentMapper, etc.
