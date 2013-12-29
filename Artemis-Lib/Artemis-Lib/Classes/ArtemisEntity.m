@@ -9,8 +9,7 @@
 @property(nonatomic,retain) ArtemisEntityManager* entityManager;
 @property(nonatomic,retain) ArtemisComponentManager* componentManager;
 
-/** Bad code from Artemis main source */
-@property(nonatomic,assign /** NB: weak ref */) ArtemisWorld* world;
+@property(nonatomic,readwrite,assign /** NB: weak ref */) ArtemisWorld* world;
 @end
 
 @implementation ArtemisEntity

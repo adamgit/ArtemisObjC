@@ -36,18 +36,15 @@
 
 -(ArtemisBag*) getComponentsIntoBag:(ArtemisBag*) fillBag;
 
-/** Bad code from Artemis main source */
 -(void) addToWorld;
-/** Bad code from Artemis main source */
 -(void) changedInWorld;
-/** Bad code from Artemis main source */
 -(void) deleteFromWorld;
 
-/** Bad code from Artemis main source */
 -(void) enable;
-/** Bad code from Artemis main source */
 -(void) disable;
 
 @property(nonatomic,retain) NSUUID* uuid;
+
+@property(nonatomic,readonly, assign /** NB: weak ref */) ArtemisWorld* world;
 
 @end
