@@ -10,6 +10,12 @@ Objective-C port of Artemis Entity System - c.f. http://gamadu.com/artemis/
 
 # Instructions
 
+## ObjectiveC shortcuts
+
+1. Generics: -- no solution yet (ObjC doesn't support them!), but look at the ObjectiveCGenerics.h file for an idea that might be usable with ArtemisBag, ArtemisComponentMapper, etc.
+
+2. Subscripting: -- Instead of "ArtemisComponent* c = [(ArtemisComponentMapper*) get:[world getEntity:entityID]]" ... use "ArtemisComponent* c = [(ArtemisComponentMapper*)[entityID]]"
+
 ## Testing and Using
 
 I've added Xcode Unit tests to the project that check the code works.
