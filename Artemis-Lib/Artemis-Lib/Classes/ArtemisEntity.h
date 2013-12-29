@@ -15,6 +15,13 @@
 /** ObjC: doesnt support protected, moved this to static */
 +(ArtemisEntity*) entityInWorld:(ArtemisWorld*) world withId:(int) newID;
 
+/**
+ * The internal id for this entity within the framework. No other entity
+ * will have the same ID, but ID's are however reused so another entity may
+ * acquire this ID if the previous entity was deleted.
+ *
+ * @return id of the entity.
+ */
 @property(nonatomic) int Id; // note: not "id" which is reserved in objc
 
 @property(nonatomic,retain,readonly) ArtemisBitSet* componentBits, * systemBits;
@@ -43,6 +50,11 @@
 -(void) enable;
 -(void) disable;
 
+/**
+ * Get the UUID for this entity.
+ * This UUID is unique per entity (re-used entities get a new UUID).
+ * @return uuid instance for this entity.
+ */
 @property(nonatomic,retain) NSUUID* uuid;
 
 @property(nonatomic,readonly, assign /** NB: weak ref */) ArtemisWorld* world;

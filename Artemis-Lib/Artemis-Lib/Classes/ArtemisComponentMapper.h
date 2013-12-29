@@ -13,4 +13,20 @@
 -(NSObject*) getSafe:(ArtemisEntity*) entity;
 -(BOOL) has:(ArtemisEntity*) entity;
 
+#pragma mark - ObjectiveC syntactic sugar that's very powerful...
+
+/**
+ Implements "self[0]", "self[1]", ... etc
+ 
+ You can only subscript with (int) entity-id's or ArtemisEntity instances
+ */
+- (id)objectAtIndexedSubscript: (NSUInteger)index;
+
+/**
+ Implements "self[ (ArtemisEntity*) a ]", ... etc
+ 
+ You can only subscript with (int) entity-id's or ArtemisEntity instances
+ */
+- (id)objectForKeyedSubscript: (id)key;
+
 @end

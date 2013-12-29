@@ -44,4 +44,21 @@
 	return [self getSafe:entity] != nil;
 }
 
+#pragma mark - ObjectiveC syntactic sugar that's very powerful...
+
+- (id)objectAtIndexedSubscript: (NSUInteger)index
+{
+	return [self.components get:index];
+}
+
+- (id)objectForKeyedSubscript: (id)key
+{
+	NSAssert([key isKindOfClass:[ArtemisEntity class]], @"You can only subscript with (int) entity-id's or ArtemisEntity instances");
+	
+	if( [key isKindOfClass:[ArtemisEntity class]])
+		return [self get:(ArtemisEntity*) key];
+	else
+		return nil;
+}
+
 @end
