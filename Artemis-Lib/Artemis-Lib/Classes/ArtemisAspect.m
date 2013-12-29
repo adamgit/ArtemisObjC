@@ -27,6 +27,9 @@
 
 -(ArtemisAspect*) all:(NSArray*) componentClasses
 {
+	if( componentClasses.count < 1 )
+		NSLog(@"WARNING: you created an Aspect of type ALL with zero elements");
+	
 	for( Class cClass in componentClasses )
 	{
 		[self.allSet set: (NSInteger)[ArtemisComponentType getIndexFor:cClass]];
@@ -37,6 +40,9 @@
 
 -(ArtemisAspect*) exclude:(NSArray*) componentClasses
 {
+	if( componentClasses.count < 1 )
+		NSLog(@"WARNING: you created an Aspect of type EXCLUDE with zero elements");
+	
 	for( Class cClass in componentClasses )
 	{
 		[self.exclusionSet set: (NSInteger)[ArtemisComponentType getIndexFor:cClass]];
@@ -47,6 +53,9 @@
 
 -(ArtemisAspect*) one:(NSArray*) componentClasses
 {
+	if( componentClasses.count < 1 )
+		NSLog(@"WARNING: you created an Aspect of type ONE with zero elements");
+	
 	for( Class cClass in componentClasses )
 	{
 		[self.oneSet set: (NSInteger)[ArtemisComponentType getIndexFor:cClass]];
