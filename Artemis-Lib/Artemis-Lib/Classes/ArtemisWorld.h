@@ -29,4 +29,9 @@
 -(void) deleteSystem:(ArtemisEntitySystem*) system;
 -(ArtemisEntitySystem*) getSystem:(Class) c;
 
+/**
+ * Process all non-passive systems.
+ */
+-(void) process;
+
 @end
