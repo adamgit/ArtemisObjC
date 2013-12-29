@@ -50,6 +50,7 @@
 		6631F162186F1A0F00C6E1AC /* ArtemisEntityProcessingSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 66141CEF185E69FF00712C78 /* ArtemisEntityProcessingSystem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6631F164186F1A2000C6E1AC /* ArtemisWorld_Debug.h in Headers */ = {isa = PBXBuildFile; fileRef = 66141CF9185E6DEB00712C78 /* ArtemisWorld_Debug.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6631F17C186F204600C6E1AC /* Artemis_Lib.h in Headers */ = {isa = PBXBuildFile; fileRef = 66141C9B185E426F00712C78 /* Artemis_Lib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6631F19B187077AD00C6E1AC /* ObjectiveCGenerics.h in Headers */ = {isa = PBXBuildFile; fileRef = 6631F19A187077AD00C6E1AC /* ObjectiveCGenerics.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +126,7 @@
 		66141CF9185E6DEB00712C78 /* ArtemisWorld_Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtemisWorld_Debug.h; sourceTree = "<group>"; };
 		66141CFA185E710400712C78 /* XCTAsyncTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCTAsyncTestCase.m; sourceTree = "<group>"; };
 		66141CFB185E710400712C78 /* XCTAsyncTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCTAsyncTestCase.h; sourceTree = "<group>"; };
+		6631F19A187077AD00C6E1AC /* ObjectiveCGenerics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectiveCGenerics.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				66141CF9185E6DEB00712C78 /* ArtemisWorld_Debug.h */,
+				6631F19A187077AD00C6E1AC /* ObjectiveCGenerics.h */,
 			);
 			path = "ObjectiveC Extensions";
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				6631F15D186F19E600C6E1AC /* ArtemisEntityObserver.h in Headers */,
 				6631F154186F19E600C6E1AC /* ArtemisAspect.h in Headers */,
 				6631F159186F19E600C6E1AC /* ArtemisComponentType.h in Headers */,
+				6631F19B187077AD00C6E1AC /* ObjectiveCGenerics.h in Headers */,
 				6631F15A186F19E600C6E1AC /* ArtemisComponentMapper.h in Headers */,
 				6631F15C186F19E600C6E1AC /* ArtemisEntityManager.h in Headers */,
 				6631F15F186F19E600C6E1AC /* ArtemisImmutableBag.h in Headers */,
