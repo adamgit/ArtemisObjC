@@ -29,7 +29,7 @@
 	ArtemisBitSet* componentBits = entity.componentBits;
 	for( NSInteger i = [componentBits nextSetBit:0]; i >= 0; i = [componentBits nextSetBit:i+1])
 	{
-		[(ArtemisBag*)[self.componentsByType get:i] setItem:[NSNull null] atIndex:entity.Id];
+		[(ArtemisBag*)[self.componentsByType get:(NSUInteger)i] setItem:[NSNull null] atIndex:entity.Id];
 	}
 	[componentBits clear];
 }
@@ -47,15 +47,15 @@
 	
 	[components setItem:component atIndex:entity.Id];
 	
-	[entity.componentBits set: componentType.index];
+	[entity.componentBits set: (NSInteger)componentType.index];
 }
 
 -(void) removeComponent:(ArtemisComponentType*) componentType fromEntity:(ArtemisEntity*) entity
 {
-	if( [entity.componentBits get:componentType.index])
+	if( [entity.componentBits get:(NSInteger)componentType.index])
 	{
 		[(ArtemisBag*)[self.componentsByType get: componentType.index] setItem:[NSNull null] atIndex:entity.Id];
-		[entity.componentBits clear: componentType.index];
+		[entity.componentBits clear: (NSInteger)componentType.index];
 	}
 }
 
@@ -86,7 +86,7 @@
 	ArtemisBitSet* componentBits = entity.componentBits;
 	for( NSInteger i = [componentBits nextSetBit:0]; i >= 0; i = [componentBits nextSetBit:i+1])
 	{
-		[fillBag add: [((ArtemisBag*)[self.componentsByType get:i]) get:entity.Id]];
+		[fillBag add: [((ArtemisBag*)[self.componentsByType get:(NSUInteger)i]) get:entity.Id]];
 	}
 	
 	return fillBag;
@@ -101,7 +101,7 @@
 {
 	if( self.deleted.size > 0 )
 	{
-		for( int i=0; self.deleted.size > i; i++ )
+		for( NSUInteger i=0; self.deleted.size > i; i++ )
 		{
 			[self removeComponentsOfEntity:(ArtemisEntity*)[self.deleted get:i]];
 		}

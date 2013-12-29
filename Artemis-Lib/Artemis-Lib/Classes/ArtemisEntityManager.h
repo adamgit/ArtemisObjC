@@ -14,10 +14,10 @@
 
 -(ArtemisEntity*) createEntityInstance;
 
--(BOOL) isActive:(int) entityID;
--(BOOL) isEnabled:(int) entityID;
+-(BOOL) isActive:(EntityID) entityID;
+-(BOOL) isEnabled:(EntityID) entityID;
 
--(ArtemisEntity*) getEntity:(int) entityId;
+-(ArtemisEntity*) getEntity:(EntityID) entityId;
 
 @property(nonatomic,readonly) int activeEntityCount;
 

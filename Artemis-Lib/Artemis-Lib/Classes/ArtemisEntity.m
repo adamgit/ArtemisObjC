@@ -14,7 +14,7 @@
 
 @implementation ArtemisEntity
 
-+(ArtemisEntity *)entityInWorld:(ArtemisWorld *)world withId:(int)newID
++(ArtemisEntity *)entityInWorld:(ArtemisWorld *)world withId:(EntityID)newID
 {
 	ArtemisEntity* newValue = [[ArtemisEntity new] autorelease];
 	
@@ -39,7 +39,7 @@
 
 -(NSString *)description
 {
-	return [NSString stringWithFormat:@"Entity[%i]", self.Id];
+	return [NSString stringWithFormat:@"Entity[%lu]", (unsigned long)self.Id];
 }
 
 -(ArtemisEntity*) addComponent:( ArtemisComponent*) component

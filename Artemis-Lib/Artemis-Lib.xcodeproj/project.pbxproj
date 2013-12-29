@@ -556,6 +556,7 @@
 		66141CB7185E426F00712C78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				DSTROOT = /tmp/Artemis_Lib.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -571,6 +572,7 @@
 		66141CB8185E426F00712C78 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				DSTROOT = /tmp/Artemis_Lib.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

@@ -10,10 +10,12 @@
 
 @class ArtemisWorld;
 
+typedef NSUInteger EntityID; // ObjC to be clear - to support 64bit we need to make this NSUInteger. Calling it EntityID simply makes it easier to find this comment (and write clearer code!)
+
 @interface ArtemisEntity : NSObject
 
 /** ObjC: doesnt support protected, moved this to static */
-+(ArtemisEntity*) entityInWorld:(ArtemisWorld*) world withId:(int) newID;
++(ArtemisEntity*) entityInWorld:(ArtemisWorld*) world withId:(EntityID) newID;
 
 /**
  * The internal id for this entity within the framework. No other entity
@@ -22,7 +24,7 @@
  *
  * @return id of the entity.
  */
-@property(nonatomic) int Id; // note: not "id" which is reserved in objc
+@property(nonatomic) EntityID Id; // note: not "id" which is reserved in objc
 
 @property(nonatomic,retain,readonly) ArtemisBitSet* componentBits, * systemBits;
 

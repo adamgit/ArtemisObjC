@@ -5,9 +5,9 @@
 
 @interface ArtemisComponentType : NSObject
 
-@property(nonatomic,readonly) int index;
+@property(nonatomic,readonly) NSUInteger index;
 
-+(int) getIndexFor:(Class) componentClass;
++(NSUInteger) getIndexFor:(Class) componentClass;
 +(ArtemisComponentType*) getTypeFor:(Class) c;
 
 @end

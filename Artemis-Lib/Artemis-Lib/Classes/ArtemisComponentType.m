@@ -2,7 +2,7 @@
 
 @interface ArtemisComponentType()
 @property(nonatomic) Class type;
-@property(nonatomic,readwrite) int index;
+@property(nonatomic,readwrite) NSUInteger index;
 @end
 
 @implementation ArtemisComponentType
@@ -28,7 +28,7 @@ static NSMutableDictionary* componentTypes;
 
 -(NSString *)description
 {
-	return [NSString stringWithFormat:@"ComponentType[%@] (%i)", self.type, self.index];
+	return [NSString stringWithFormat:@"ComponentType[%@] (%lu)", self.type, (unsigned long)self.index];
 }
 
 +(ArtemisComponentType*) getTypeFor:(Class) c
@@ -44,7 +44,7 @@ static NSMutableDictionary* componentTypes;
 	return type;
 }
 
-+(int) getIndexFor:(Class) c
++(NSUInteger) getIndexFor:(Class) c
 {
 	return ((ArtemisComponentType*)[self getTypeFor:c]).index;
 }

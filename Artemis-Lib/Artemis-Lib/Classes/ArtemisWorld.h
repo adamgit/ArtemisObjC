@@ -17,7 +17,7 @@
 -(void) initialize;
 
 -(ArtemisEntity*) createEntity;
--(ArtemisEntity*) getEntity:(int) entityId;
+-(ArtemisEntity*) getEntity:(EntityID) entityId;
 
 -(void) addEntity:(ArtemisEntity*) entity;
 -(void) changedEntity:(ArtemisEntity*) entity;

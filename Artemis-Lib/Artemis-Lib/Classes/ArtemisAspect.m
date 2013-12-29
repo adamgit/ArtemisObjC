@@ -29,7 +29,7 @@
 {
 	for( Class cClass in componentClasses )
 	{
-		[self.allSet set: [ArtemisComponentType getIndexFor:cClass]];
+		[self.allSet set: (NSInteger)[ArtemisComponentType getIndexFor:cClass]];
 	}
 	
 	return self;
@@ -39,7 +39,7 @@
 {
 	for( Class cClass in componentClasses )
 	{
-		[self.exclusionSet set: [ArtemisComponentType getIndexFor:cClass]];
+		[self.exclusionSet set: (NSInteger)[ArtemisComponentType getIndexFor:cClass]];
 	}
 	
 	return self;
@@ -49,7 +49,7 @@
 {
 	for( Class cClass in componentClasses )
 	{
-		[self.oneSet set: [ArtemisComponentType getIndexFor:cClass]];
+		[self.oneSet set: (NSInteger)[ArtemisComponentType getIndexFor:cClass]];
 	}
 	
 	return self;

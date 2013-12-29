@@ -2,7 +2,7 @@
 
 @interface ArtemisIdentifierPool : NSObject
 @property(nonatomic,retain) ArtemisBag* ids;
-@property(nonatomic) int nextAvailableId;
+@property(nonatomic) NSUInteger nextAvailableId;
 
 @end
 
@@ -17,11 +17,11 @@
     return self;
 }
 
--(int) checkOut
+-(EntityID) checkOut
 {
 	if( self.ids.size > 0 )
 	{
-		return [(NSNumber*)[self.ids removeLast] intValue];
+		return [(NSNumber*)[self.ids removeLast] unsignedIntegerValue];
 	}
 	else
 	{
@@ -29,7 +29,7 @@
 	}
 }
 
--(void) checkIn:(int) newId
+-(void) checkIn:(EntityID) newId
 {
 	[self.ids add:@(newId)];
 }
@@ -83,19 +83,19 @@
 
 -(void)enabled:(ArtemisEntity *)entity
 {
-	[self.disabled clear:entity.Id];
+	[self.disabled clear:(NSInteger)entity.Id];
 }
 
 -(void)disabled:(ArtemisEntity *)entity
 {
-	[self.disabled set:entity.Id];
+	[self.disabled set:(NSInteger)entity.Id];
 }
 
 -(void)deleted:(ArtemisEntity *)entity
 {
 	[self.entities setItem:[NSNull null] atIndex:entity.Id];
 	
-	[self.disabled clear:entity.Id];
+	[self.disabled clear:(NSInteger)entity.Id];
 	
 	[self.identifierPool checkIn:entity.Id];
 	
@@ -103,17 +103,17 @@
 	self.totalDeleted++;
 }
 
--(BOOL) isActive:(int) entityID
+-(BOOL) isActive:(EntityID) entityID
 {
 	return [self.entities get:entityID] != [NSNull null];
 }
 
--(BOOL) isEnabled:(int) entityID
+-(BOOL) isEnabled:(EntityID) entityID
 {
-	return ! [self.disabled get:entityID];
+	return ! [self.disabled get:(NSInteger)entityID];
 }
 
--(ArtemisEntity*) getEntity:(int) entityId
+-(ArtemisEntity*) getEntity:(EntityID) entityId
 {
 	return (ArtemisEntity*) [self.entities get:entityId];
 }

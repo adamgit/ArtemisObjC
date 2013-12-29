@@ -4,7 +4,7 @@
 
 /** FIXME: not implemented as high performance yet */
 @property(nonatomic,retain) NSMutableArray* data;
-@property(nonatomic) NSInteger filledItems;
+@property(nonatomic) NSUInteger filledItems;
 @end
 
 @implementation ArtemisBag
@@ -36,7 +36,7 @@
     return self;
 }
 
--(NSObject*) remove:(NSInteger) index
+-(NSObject*) remove:(NSUInteger) index
 {
 	NSObject* item = [self.data objectAtIndex:index];
 	
@@ -64,7 +64,7 @@
 	
 	/** FIXME: not implemented as high performance yet */
 	
-	for( int i = 0; i < self.size; i++ )
+	for( NSUInteger i = 0; i < self.size; i++ )
 	{
 		id itemOriginal = [self.data objectAtIndex:i];
 		
@@ -97,30 +97,30 @@
 	
 	/** FIXME: not implemented as high performance yet */
 	
-	NSInteger oldSize = self.size;
+	NSUInteger oldSize = self.size;
 	[self.data removeObjectsInArray:otherBag.data];
 	modified = (oldSize != self.size);
 	
 	return modified;
 }
 
--(NSObject*) get:(NSInteger) index
+-(NSObject*) get:(NSUInteger) index
 {
 	NSObject* value = [self.data objectAtIndex:index];
 	return ( value == [NSNull null]) ? nil : value; /** ObjC: have to convert NSNull to nil */
 }
 
--(NSInteger)size
+-(NSUInteger)size
 {
 	return self.filledItems;
 }
 
--(NSInteger)capacity
+-(NSUInteger)capacity
 {
 	return self.data.count;
 }
 
--(BOOL) isIndexWithinBounds:(int) bounds
+-(BOOL) isIndexWithinBounds:(NSUInteger) bounds
 {
 	return bounds < self.capacity;
 }
@@ -142,7 +142,7 @@
 }
 
 /** Have to rename for objc */
--(void) setItem:(NSObject*) item atIndex:(int) index
+-(void) setItem:(NSObject*) item atIndex:(NSUInteger) index
 {
 	if( index > self.capacity)
 	{
@@ -153,7 +153,7 @@
 	self.filledItems++;
 }
 
--(void) ensureCapacity:(NSInteger) index
+-(void) ensureCapacity:(NSUInteger) index
 {
 	if( index > self.capacity )
 		[self growTo: index * 2];
@@ -180,16 +180,16 @@
 
 -(void) grow
 {
-	NSInteger newCapacity = ( self.capacity * 3 ) / 2 + 1;
+	NSUInteger newCapacity = ( self.capacity * 3 ) / 2 + 1;
 	[self growTo: newCapacity];
 }
 
 /** Must rename, Objc too crappy to allow poly */
--(void) growTo:(NSInteger) newCapacity
+-(void) growTo:(NSUInteger) newCapacity
 {
-	NSInteger currentCapacity = self.capacity;
+	NSUInteger currentCapacity = self.capacity;
 	
-	for( NSInteger i=currentCapacity; i<newCapacity; i++ )
+	for( NSUInteger i=currentCapacity; i<newCapacity; i++ )
 	{
 		[self add:[NSNull null]]; // but do NOT change the filledItems count
 	}

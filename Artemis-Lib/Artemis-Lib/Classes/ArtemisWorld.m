@@ -62,12 +62,12 @@ typedef void (^Performer)(NSObject<ArtemisEntityObserver>* observer, ArtemisEnti
 
 -(void) initialize
 {
-	for( int i=0; i < self.managersBag.size; i++ )
+	for( NSUInteger i=0; i < self.managersBag.size; i++ )
 	{
 		[(ArtemisManager*)[self.managersBag get:i] initialize];
 	}
 	
-	for( int i=0; i < self.systemsBag.size; i++ )
+	for( NSUInteger i=0; i < self.systemsBag.size; i++ )
 	{
 		[ArtemisComponentMapperInitHelper configTarget:[self.systemsBag get:i] inWorld:self];
 		[(ArtemisEntitySystem*)[self.systemsBag get:i] initialize];
@@ -124,7 +124,7 @@ typedef void (^Performer)(NSObject<ArtemisEntityObserver>* observer, ArtemisEnti
 	return [self.entityManager createEntityInstance];
 }
 
--(ArtemisEntity*) getEntity:(int) entityId
+-(ArtemisEntity*) getEntity:(EntityID) entityId
 {
 	return [self.entityManager getEntity:entityId];
 }
@@ -158,7 +158,7 @@ typedef void (^Performer)(NSObject<ArtemisEntityObserver>* observer, ArtemisEnti
 
 -(void) notifySystems:(ArtemisEntity*) entity withBlock:(Performer) performer
 {
-	for( NSInteger i=0, s = self.systemsBag.size; s > i; i++ )
+	for( NSUInteger i=0, s = self.systemsBag.size; s > i; i++ )
 	{
 		performer( (NSObject<ArtemisEntityObserver>*)[self.systemsBag get:i], entity );
 	}
@@ -166,7 +166,7 @@ typedef void (^Performer)(NSObject<ArtemisEntityObserver>* observer, ArtemisEnti
 
 -(void) notifyManagers:(ArtemisEntity*) entity withBlock:(Performer) performer
 {
-	for( NSInteger i=0, s = self.managersBag.size; s > i; i++ )
+	for( NSUInteger i=0, s = self.managersBag.size; s > i; i++ )
 	{
 		performer( (NSObject<ArtemisEntityObserver>*)[self.managersBag get:i], entity );
 	}
@@ -181,7 +181,7 @@ typedef void (^Performer)(NSObject<ArtemisEntityObserver>* observer, ArtemisEnti
 {
 	if( ! entities.isEmpty )
 	{
-		for( int i = 0; entities.size > i; i++ )
+		for( NSUInteger i = 0; entities.size > i; i++ )
 		{
 			ArtemisEntity* entity = (ArtemisEntity*)[entities get:i];
 			[self notifyManagers:entity withBlock:performer];
@@ -219,7 +219,7 @@ typedef void (^Performer)(NSObject<ArtemisEntityObserver>* observer, ArtemisEnti
 	
 	[self.componentManager clean];
 	
-	for( int i = 0; self.systemsBag.size > i; i++ )
+	for( NSUInteger i = 0; self.systemsBag.size > i; i++ )
 	{
 		ArtemisEntitySystem* system = (ArtemisEntitySystem*) [self.systemsBag get:i];
 		if( ! system.isPassive )
