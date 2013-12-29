@@ -97,4 +97,18 @@
 	return firstIndexAfterStart == kCFNotFound? -1 : firstIndexAfterStart;
 }
 
+-(NSString *)description
+{
+	NSMutableString* s = [NSMutableString string];
+	
+	CFIndex l = CFBitVectorGetCount(bitVector);
+	[s appendFormat:@"[BitSet(%li):", l];
+	for( int i=0; i<l; i++ )
+	{
+		[s appendString: l == 0 ? @"0" : @"1" ];
+	}
+	[s appendString:@"]"];
+	return s;
+}
+
 @end

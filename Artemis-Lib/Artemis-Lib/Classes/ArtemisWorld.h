@@ -20,6 +20,13 @@
 -(ArtemisEntity*) getEntity:(EntityID) entityId;
 
 -(void) addEntity:(ArtemisEntity*) entity;
+/**
+ * Ensure all systems are notified of changes to this entity.
+ * If you're adding a component to an entity after it's been
+ * added to the world, then you need to invoke this method.
+ *
+ * @param e entity
+ */
 -(void) changedEntity:(ArtemisEntity*) entity;
 -(void) deleteEntity:(ArtemisEntity*) entity;
 -(void) enable:(ArtemisEntity*) entity;

@@ -191,7 +191,7 @@
 	
 	for( NSUInteger i=currentCapacity; i<newCapacity; i++ )
 	{
-		[self add:[NSNull null]]; // but do NOT change the filledItems count
+		[self.data addObject:[NSNull null]]; // but do NOT change the filledItems count
 	}
 }
 

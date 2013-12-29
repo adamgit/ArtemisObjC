@@ -87,4 +87,18 @@
 	return aspect;
 }
 
+-(NSString *)description
+{
+	NSMutableString* s = [NSMutableString string];
+	
+	[s appendString:@"[Aspect:"];
+
+	[s appendFormat:@" ALL: %@", self.allSet];
+	[s appendFormat:@" EXCLUDE: %@", self.exclusionSet];
+	[s appendFormat:@" ONE: %@", self.oneSet];
+	
+	[s appendString:@"]"];
+	return s;
+}
+
 @end

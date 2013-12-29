@@ -42,13 +42,6 @@ static NSMutableDictionary* indices;
 
 @implementation ArtemisEntitySystem
 
-+(ArtemisEntitySystem *)entitySystemWithAspect:(ArtemisAspect *)aspect
-{
-	ArtemisEntitySystem* newValue = [[[ArtemisEntitySystem alloc] initWithAspect:aspect] autorelease];
-	
-	return newValue;
-}
-
 - (id)init
 {
     self = [super init];
