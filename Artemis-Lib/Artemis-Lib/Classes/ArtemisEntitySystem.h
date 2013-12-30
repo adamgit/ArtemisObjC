@@ -17,15 +17,6 @@
 @property(nonatomic) BOOL isPassive, isDummy;
 @property(nonatomic,retain) ArtemisBag* actives;
 
-#pragma mark - WARNING NEVER DO THIS:
-
-#if NEVER_DO_THIS
-If you attempt this, Apple's ObjC breaks, their implementation of "Class messages" is broken.
-+(ArtemisEntitySystem*) entitySystemWithAspect:(ArtemisAspect*) aspect;
-#endif
-
-#pragma mark -
-
 /** Objc: needed for subclasses, java doesnt have this problem */
 - (id)initWithAspect:(ArtemisAspect*) aspect;
 
