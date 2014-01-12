@@ -3,6 +3,12 @@ ArtemisObjC
 
 Objective-C port of Artemis Entity System - c.f. http://gamadu.com/artemis/
 
+# Status
+
+January 2014: Artemis is great, but getting it working well in C is painful. I'm making a new open-source ES that tries to re-make Artemis as a truly cross-platform ES, and expand on some of its good ideas. More info here:
+
+https://github.com/adamgit/ArtemisObjC/issues/4
+
 ### Version:
  - Artemis doesn't use GitHub :(, so we cannot directly track with graphs etc.
  - Currently, this port is based off version: http://code.google.com/p/artemis-framework/source/detail?r=2fa7aea9bd6295563cf6f2120b6be2b99ccd9cd6
